@@ -1,0 +1,42 @@
+<div class="mat-elevation-z2" style="width: 30%; padding: 30px; margin: 50px auto; display: flex;justify-content: center;">
+  <form [formGroup]="formUser">
+      <div class="flex">
+          <mat-form-field>
+              <mat-label>Nomnbre de Usuario</mat-label>
+              <input matInput  formControlName="userName">
+            </mat-form-field>
+      </div>
+      <div class="flex">
+          <mat-form-field>
+              <mat-label>Nombre</mat-label>
+              <input matInput  formControlName="name">
+            </mat-form-field>
+      </div>
+      <div class="flex">
+          <mat-form-field>
+              <mat-label>Apellido</mat-label>
+              <input matInput   formControlName="lastName">
+            </mat-form-field>
+      </div>
+      <div class="flex">
+          <mat-form-field>
+              <mat-label>No. Identificacion</mat-label>
+              <input matInput  formControlName="identificationNumber">
+            </mat-form-field>
+      </div>
+
+      <div class="flex">
+        <mat-form-field>
+            <mat-label>Numero de telefono</mat-label>
+            <input matInput  formControlName="phoneNumber">
+          </mat-form-field>
+    </div>
+
+      <div class="flex">
+          <button mat-flat-button color="primary" (click)="dialogoSave()">Guardar</button>
+          <button mat-flat-button color="warn" (click)="dialogClose()" style="margin-left: 8px;">Salir</button>
+      </div>
+
+  </form>
+
+</div>
